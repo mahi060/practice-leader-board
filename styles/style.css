@@ -1,0 +1,138 @@
+/* google fonts/ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles/fonts */
+
+body{
+    background-color: #F3F1FF;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 870px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
+}
+hr{
+    width: 807px;
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+    margin-top: 30px;
+}
+/*--------------
+top players style 
+---------------*/
+.top-players{
+    margin-left: 15px;
+}
+.section-title{
+    color: tomato;
+}
+.players{
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 29px;
+}
+.player{
+    display: flex;
+}
+.player img{
+    width: 56px;
+}
+.player-name{
+    font-size: 18px;
+    padding-left: 16px;
+}
+
+/* top blogs style */
+.top-blogs{
+    margin-left: 15px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.blog{
+    align-items: center;
+    display: flex;
+}
+.thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    padding-left: 16px;
+}
+.blog-info p{
+    color: #9F9F9F;
+    
+}
+.blog-info a{
+    color: tomato;
+    text-decoration: none;
+}
+
+/* courses styles */
+
+.courses{
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+.course{
+    border-radius: 10px;
+    box-shadow:2px 2px 50px rgba(240, 226, 226, 0.925);
+}
+.banner img{
+    width: 220px;
+}
+.course-author{
+    color: rgba(255, 0, 0, 0.884);
+}
+.course-info{
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fas .fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: orange;
+}
+.fa-star.empty{
+    color: lightgrey;
+}
+.course-duration{
+    padding: 2px;
+    color: red;
+    border-radius: 15px;
+    background-color: rgba(240, 128, 128, 0.418);
+}
+
+/*-----------
+ media queries 
+ ------------*/
+
+ @media only screen and (max-width:688px) {
+     .container {
+         width: 100%;
+     }
+     .players .blogs .courses {
+         grid-template-columns: 1fr 1fr 1fr;
+     }
+     .player .blog {
+         flex-direction: column;
+     }
+     
+ }
